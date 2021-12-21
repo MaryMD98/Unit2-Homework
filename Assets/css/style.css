@@ -1,0 +1,27 @@
+/* font family of the webpage set to courier new
+ * the page background color set to light purple
+ */
+*{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(240, 221, 240);
+}
+
+/* block section ABOUT Me */
+.aboutMe{
+
+}
+
+/* Block section about WORKS */
+.works{
+
+}
+
+/* Block section bout PROJECTS */
+.projects{
+
+}
+
+/* Block section about Contact me */
+.contactMe{
+    
+}
