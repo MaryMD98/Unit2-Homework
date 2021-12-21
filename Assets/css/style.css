@@ -43,25 +43,73 @@ header nav ul li a {
 }
 /****** end of header layout */
 
-main, footer{
-    background-color: rgb(240, 221, 240);
+main , footer{
+    background-color: #f0ddf0;
+    padding:1px;
 }
-/**** block section ABOUT Me */
-.aboutMe{
 
+/***************************/
+/* box section will display to the right of the page */
+.contactMe{
+    margin-bottom: 50px;
+    color: #ffffff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.contactMe h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/**** Block section about Contact me */
+.box-to-the-right{
+    margin-top:50px;
+    margin-right: 20px;
+    padding: 20px;
+    /* clear: both; */
+    float:right;
+    width: 20%;
+    height: 100%;
+    background-color: #7a508d;
+}
+/*********************************/
+
+/*********************************/
+/**** block section ABOUT Me  and Works*/
+.aboutMe{
+    /* padding-top: 10px; */
+    font-size: 20px;
+    width:75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* font size of paragraph */
+p {
+    font-size:16px;
+}
+
+/* box section will display to the left of the page */
+.box-to-the-left{
+    margin-bottom: 20px;
+    padding: 40px;
+    height: 300px;
+    background-color: #7a508d;
+    color: #ffffff;
 }
 
 /**** Block section about WORKS */
 .works{
-
+    font-size: 20px;
+    width:75%;
+    display: inline-block;
+    margin-left: 20px;
 }
 
 /**** Block section bout PROJECTS */
-.projects{
+/* .projects{
 
-}
-
-/**** Block section about Contact me */
-.contactMe{
-
-}
+} */
+ 
+/******************************/
