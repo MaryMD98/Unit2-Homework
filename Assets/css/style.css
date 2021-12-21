@@ -55,13 +55,27 @@ main , footer{
 .contactMe{
     margin-bottom: 50px;
     color: #ffffff;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 
 }
-.contactMe h2 {
-    margin-bottom: 10px;
+.contactMe figure h2 {
+    /* margin-bottom: 10px; */
     text-align: center;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-right: 40px; /** added to have space between links*/
+    margin-bottom: 60px;
+}
+
+.contactMe figure nav ul li {
+    display:inline-flex;
+    margin-left:20px;
+    flex-wrap: wrap;
+}
+
+.contactMe figure nav ul li a{
+    color:white;
+    text-decoration:none;
+    text-align:center;
 }
 
 /**** Block section about Contact me */
@@ -74,6 +88,8 @@ main , footer{
     width: 20%;
     height: 100%;
     background-color: #7a508d;
+    display: flex;
+    flex-wrap:wrap;
 }
 /*********************************/
 
@@ -87,10 +103,37 @@ main , footer{
     margin-left: 20px;
 }
 
-/* font size of paragraph */
+/* image inside content box are displayed to the left */
+.float-left {
+    float: left;
+    margin-right: 30px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 20px;
+    font-size:16px;
+}
+
 p {
     font-size:16px;
 }
+
+.box-to-the-left-about{
+    margin-bottom: 20px;
+    padding: 50px;
+    height:300px;  /* */
+    background-color: #7a508d;
+    color: #ffffff;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+/* font size of paragraph */
+/* .aboutMe article p {
+    font-size:16px;
+    font-display: block;
+    margin:20px;
+} */
 
 /* box section will display to the left of the page */
 .box-to-the-left{
@@ -146,10 +189,27 @@ p {
     text-align: center;
 }
   
-.card > img {
+.card a img {
     width: 100%;
 }
+
+.card:hover , .card:hover h3 {
+  box-shadow: inset 0px 0px 8px #e866ec, 0 0 30px #e866ec;
+}
 /******************************/
+
+footer {
+    padding:30px;
+    text-align: center;
+  
+}
+
+footer h2 {
+    font-size: 18px;
+    font-weight: 900;
+    color: #2f2e30;
+}
+/**********************************/
 
 /* for diferent types of screen */
 @media screen and (max-width: 768px) {
