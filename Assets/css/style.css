@@ -1,6 +1,8 @@
 /* font family of the webpage set to courier new
  * the page background color set to light purple
  */
+
+ /* color scheme sourced from http://khroma.co/generator/ *********/
 *{
     font-family:cursive;
 }
@@ -110,19 +112,22 @@ p {
     
     display: inline-block;
     margin-left: 20px;
+    transition: flex-basis 500ms linear;
 }
 /* end of block section about me and works */
 
 /***********************/
 /* start of work boxes */
 
-.products {
+.products-firstApp {
     flex: 1;
     background-color: #7a508d;
     padding: 15px;
-    display: flex;
+    display:center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content:center;
+    flex-wrap: wrap;
+    transition: flex-basis 500ms linear;
 }
 
 .firstapp{
@@ -130,16 +135,13 @@ p {
     border-width: 1px;
     border-radius: 50px;
     padding: 10px;
-    flex: 0 0 400px;  /* 300 originalusing this changes the size of box*/ 
+    flex: 0 0 500px;  /* 300 originalusing this changes the size of box*/ 
     transform: rotate(8deg);
     box-shadow: 10px 10px 5px #aaaaaa;
     margin: 50px;
-}
-
-.products > .firstapp{
-    display: flex;
+    /* display:block;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
 }
 
 .firstapp > h3 {
@@ -158,6 +160,17 @@ p {
 
 .firstapp:hover , .firstapp:hover h3 {
   box-shadow: inset 0px 0px 8px #e866ec, 0 0 30px #e866ec;
+}
+
+.products {
+    flex: 1;
+    background-color: #7a508d;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* so cards dont jump too quick when resizing */
+    transition: flex-basis 500ms linear;
 }
 
 .card {
@@ -192,14 +205,40 @@ p {
 
 /*****************************/
 /* box section will display to the right of the page */
+
+aside {
+    width: 25%;
+    background-color: purple;
+  }
+  
+  aside h2 {
+    font-size: 150%;
+  }
+
+  input, button {
+    width: 100%;
+    margin: 2% 0;
+    padding: 1%;
+  }
+  /* aside section figure {
+    display:center;
+    margin:auto;
+    flex-wrap: wrap;
+  } */
+
+  aside section figure a img {
+    display: block;
+    margin: auto;
+    padding-left: 40px;
+    max-width: 150px;
+    max-height: 150px;
+    mix-blend-mode: multiply;
+  }
+/*******************************/
 .contactMe{
-    /* margin-bottom: 20px; */
     color: #ffffff;
-    /* margin-top:20px; */
     margin-right: 20px; 
-    /* margin: 20px; */
     padding: 30px;
-    /* clear: both; */
     float:right;
     flex-wrap:wrap;
     width: 20%;
@@ -234,8 +273,8 @@ p {
     display: block;
     margin: auto;
     padding-left: 40px;
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 150px;
+    max-height: 150px;
     mix-blend-mode: multiply;
 }
 
@@ -258,9 +297,64 @@ footer h2 {
 /**********************************/
 
 /* for diferent types of screen */
-@media screen and (max-width: 768px) {
-    main,
-    nav {
-      flex-direction: column;
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (min-width: 768px) {
+    /* on tablets, set columns to only be 50% of the width and not grow */
+    .products {
+      flex: 0 0 50%;
+      max-width: 50%;
+      flex-direction: row;
     }
+
+    .products-firstApp {
+        flex: 0 0 75%;
+        max-width: 75%;
+      }
+  
+    /* select the last child to grow to full width if it has space to grow */
+    /* .products:last-child {
+      flex-grow: 1;
+    } */
+    .contactMe{
+        flex-direction: row;
+    }
+
+    aside {
+        width: 100%;
+        text-align: center;
+      }
+    /* section {
+        padding-right: 0;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    } */
+
+    header,  main {
+    flex-direction: column;
+    
+     }
   }
+  
+  /* media query for larger screens */
+
+  /* @media screen and (min-width: 992px) {
+    header {
+      width: 75%;
+    }
+  
+    .card-column {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+    } */
+
+  /* @media screen and (min-width: 992px) { */
+    /* header {
+      width: 75%;
+    }
+   */
+    /* .products , .products-firstApp {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+    } */
+  /* } */
