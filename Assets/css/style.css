@@ -2,7 +2,7 @@
  * the page background color set to light purple
  */
 *{
-    font-family: 'Courier New', Courier, monospace;
+    font-family:cursive;
     background-color: rgb(240, 221, 240);
 }
 
@@ -23,5 +23,5 @@
 
 /* Block section about Contact me */
 .contactMe{
-    
+
 }
