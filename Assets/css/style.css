@@ -50,53 +50,10 @@ main , footer{
     padding:1px;
 }
 
-/*****************************/
-/* box section will display to the right of the page */
-.contactMe{
-    margin-bottom: 50px;
-    color: #ffffff;
-    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-
-}
-.contactMe figure h2 {
-    /* margin-bottom: 10px; */
-    text-align: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-right: 40px; /** added to have space between links*/
-    margin-bottom: 60px;
-}
-
-.contactMe figure nav ul li {
-    display:inline-flex;
-    margin-left:20px;
-    flex-wrap: wrap;
-}
-
-.contactMe figure nav ul li a{
-    color:white;
-    text-decoration:none;
-    text-align:center;
-}
-
-/**** Block section about Contact me */
-.box-to-the-right{
-    margin-top:50px;
-    margin-right: 20px;
-    padding: 20px;
-    /* clear: both; */
-    float:right;
-    width: 20%;
-    height: 100%;
-    background-color: #7a508d;
-    display: flex;
-    flex-wrap:wrap;
-}
-/*********************************/
-
 /*********************************/
 /**** block section ABOUT Me  and Works*/
 .aboutMe{
-    /* padding-top: 10px; */
+    padding-top: 10px;
     font-size: 20px;
     width:75%;
     display: inline-block;
@@ -122,6 +79,7 @@ main , footer{
 
 p {
     font-size:16px;
+    margin-bottom: 20px;
 }
 
 .box-to-the-left-about{
@@ -232,6 +190,60 @@ p {
 }
 /******************************/
 
+/*****************************/
+/* box section will display to the right of the page */
+.contactMe{
+    /* margin-bottom: 20px; */
+    color: #ffffff;
+    /* margin-top:20px; */
+    margin-right: 20px; 
+    /* margin: 20px; */
+    padding: 30px;
+    /* clear: both; */
+    float:right;
+    flex-wrap:wrap;
+    width: 20%;
+    height: 100%;
+    background-color: #7a508d;
+    display: center;/*inline-flex;*/
+    font-size: 20px;
+    
+}
+
+.contactMe section h2 , .contactMe section figure h3 {
+    margin-bottom: 10px;
+    text-align:center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-right: 40px; /** added to have space between links*/
+    margin-bottom: 20px;
+}
+
+.contactMe section figure {
+    display:center;
+    margin:auto;
+    flex-wrap: wrap;
+}
+
+.contactMe section figure a{
+    color:white;
+    text-decoration:none;
+    text-align:center;
+}
+
+.contactMe section figure a img{
+    display: block;
+    margin: auto;
+    padding-left: 40px;
+    max-width: 200px;
+    max-height: 200px;
+    mix-blend-mode: multiply;
+}
+
+ 
+/*********************************/
+
+/********************************/
+/* footer */
 footer {
     padding:30px;
     text-align: center;
