@@ -12,19 +12,19 @@ The page displays an area in header with link to areas of the page. the area Abo
 ## Screenshot  of line of code:
 Below are screenshots of the html and css code
 
-![image one of code screenshot](./assets/screenshot/screenshot1.png)
-![image two of code screenshot](./assets/screenshot/screenshot2.png)
-![image three of code screenshot](./assets/screenshot/screenshot3.png)
-![image four of code screenshot](./assets/screenshot/screensho4.png)
-![image five of code screenshot](./assets/screenshot/screenshot5.png)
-![image six of code screenshot](./assets/screenshot/screenshot6.png)
-![image seven of code screenshot](./assets/screenshot/screenshot7.png)
-![image eight of code screenshot](./assets/screenshot/screenshot8.png)
-![image nine of code screenshot](./assets/screenshot/screenshot9.png)
-![image ten of code screenshot](./assets/screenshot/screenshot10.png)
-![image eleven of code screenshot](./assets/screenshot/screenshot11.png)
-![image twelve of code screenshot](./assets/screenshot/screenshot12.png)
-![image thirteen of code screenshot](./assets/screenshot/screenshot13.png)
+![image one of code screenshot](./Assets/screenshot/screenshot1.png)
+![image two of code screenshot](./Assets/screenshot/screenshot2.png)
+![image three of code screenshot](./Assets/screenshot/screenshot3.png)
+![image four of code screenshot](./Assets/screenshot/screensho4.png)
+![image five of code screenshot](./Assets/screenshot/screenshot5.png)
+![image six of code screenshot](./Assets/screenshot/screenshot6.png)
+![image seven of code screenshot](./Assets/screenshot/screenshot7.png)
+![image eight of code screenshot](./Assets/screenshot/screenshot8.png)
+![image nine of code screenshot](./Assets/screenshot/screenshot9.png)
+![image ten of code screenshot](./Assets/screenshot/screenshot10.png)
+![image eleven of code screenshot](./Assets/screenshot/screenshot11.png)
+![image twelve of code screenshot](./Assets/screenshot/screenshot12.png)
+![image thirteen of code screenshot](./Assets/screenshot/screenshot13.png)
 
 
 
