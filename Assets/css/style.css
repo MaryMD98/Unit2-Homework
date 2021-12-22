@@ -128,29 +128,21 @@ p {
     justify-content:space-evenly;
     flex-direction: row;
     transition: flex-basis 500ms linear;
-    padding-right: 50px;
+    padding-right: 150px;
+    margin-left:15%;   /**/
 }
 
 .firstapp{
     border-style: solid;
     border-width: 1px;
     border-radius: 50px;
-    /* padding: 10px; */
     flex: 0 0 500px;  /* 300 originalusing this changes the size of box*/ 
     transform: rotate(8deg);
     box-shadow: 10px 10px 5px #aaaaaa;
-    /* margin: 50px; */
-
-    /* margin:60px; */
     padding: 10px;
-    margin:0px;
+    /* margin:0px; */
     margin-bottom: 0px;
     margin-top: 20px;
-    
-
-    /* display:block;
-    flex-wrap: wrap;
-    justify-content: space-evenly; */
 }
 
 .firstapp > h3 {
@@ -275,11 +267,11 @@ footer h2 {
 /* device less than 768px - use maxwidth */
 @media screen and (max-width: 768px) {
     /* on tablets, set columns to only be 50% of the width and not grow */
-    
-    header{
-        background-color: red;
-    }
     /* headear will be on one single line */
+    /* header{
+        background-color: red;
+    } */
+
     header nav{  
         flex-direction: row;
         margin: 0px;
@@ -300,7 +292,7 @@ footer h2 {
    .products-firstApp {
         flex: 0 0 100%;
         max-width: 100%;
-        padding: 0px;
+        padding: 20px;
         margin:0px;
         flex-direction: column;
     }
@@ -346,47 +338,35 @@ footer h2 {
 
 @media screen and (min-width: 992px) {
    
-header{
+/* header{
     background-color: blue;
-}
+} */
+
+    .aboutMe article img{
+        margin: 20px;
+        margin-top: 0px;
+    }
 
     .products-firstApp {
         flex: 0 0 33.333%;
         max-width: 33.33340%;
-        margin-left: 30%;
-        
-
-
-        /* padding: 0px;
-        margin:0px; */
-        
-        /* flex-direction:row; */
+        padding-right: 10px;
+        margin-left:25%;  
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
 
     .products {
-        
         flex: 0 0 33.333%;
         max-width: 33.333%;
-        /* justify-content: space-around; */
-        /* flex-wrap: wrap; */
-        
-        /* padding-bottom: 20px; */
-        flex-direction: row;
-    }
+        padding-right: 0px;
+        margin-left:20%;
+     }
 
     .card{
-        
-        /* margin-bottom: 20px;
-        margin-top: 20px; */
-        /* flex-direction: row; */
-        /* flex-wrap: wrap; */
-        justify-content:space-evenly; 
-    }
-  
-    /* .card-column {
-      flex: 0 0 33.333%;
-      max-width: 33.333%;
-    }  */
+        flex-wrap: wrap;
+        flex-direction:row-reverse;
+    }    
 }
 
   
